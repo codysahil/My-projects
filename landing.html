@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: white;
+            background-color: black;
+        }
+        .logo img {
+  width: 70px;
+  height: 70px;
+  border-radius: 41px;
+  outline: 4px solid red;
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 3rem;
+            background-color: aqua;
+            border-radius: 15px;
+        }
+        .items{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+        .items a:link{
+            text-decoration: none;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .items a:hover{
+            color: red;
+        }
+        .active{
+            color: red !important;
+        }
+        button{
+            font-size: 2rem;
+            padding: 0.6rem 1rem;
+            font-weight: bold;
+            color: white;
+            background: linear-gradient(to right, #c31432,#892211);
+            border-radius: 10px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            cursor: pointer;
+  border: none;
+        }
+        button:hover{
+            background: white;
+            outline: 1px solid red;
+            color: red;
+            border: none;
+        }
+        @media screen and(max-width:600px){
+            nav{
+                float: none;
+                width: 100%;
+            }
+            
+        }
+        .process,.material,.history{
+            width: 100%;
+            height: 400px;
+            background-color: bisque;
+            margin: 15px;
+            padding: 5px;
+            border-radius: 52px;
+            
+        }
+       h2{
+        font-weight: bold;
+        color: #892211;
+       }
+       p{
+        text-align: justify;
+        color: black;
+       }
+    </style>
+</head> 
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="rajbricks.jpeg" alt="">
+            </div>
+            <div class="items">
+                <a href="#" class="active">Home</a>
+                <a href="#">Services</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Blog</a>
+            </div>
+            <div class="other">
+                <button>Log in</button>
+            </div>
+        </nav>
+    </header>
+    <section>
+<div class="process">
+    <h2 style="display: inline;">&nbsp;&nbsp;&nbsp;Process:</h2>
+    <p style="display: inline;">The clay and sand mixture is then moulded into brick shapes using a brick mould. This process can be done either manually or by using a machine.The moulded bricks are then left to dry in the sun for several days. During this time, the bricks lose moisture and become hard enough to withstand handling.
+        The dried bricks are then burned in a kiln at high temperatures to make them stronger and more durable. The temperature and duration of the burning process is carefully controlled to produce the desired quality of brick.</p>
+</div>
+<div class="material">
+    <h2>&nbsp;&nbsp;&nbsp;Process:</h2>
+</div>
+<div class="history">
+    <h2>&nbsp;&nbsp;&nbsp;Process:</h2>
+    
+</div>
+    </section>
+</body>
+</html>

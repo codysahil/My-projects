@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sticky Notes</title>
+    <style>
+      .sticky-note {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 999;
+        background-color: yellow;
+        padding: 10px;
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sticky-note">
+      <h2>My Sticky Note</h2>
+      <p>This is some text in my sticky note.</p>
+    </div>
+    <script>
+      // create a new sticky note element
+      const stickyNote = document.createElement('div');
+      stickyNote.classList.add('sticky-note');
+      
+      // create the title and text for the sticky note
+      const title = document.createElement('h2');
+      title.textContent = 'My Sticky Note';
+      stickyNote.appendChild(title);
+      
+      const text = document.createElement('p');
+      text.textContent = 'This is some text in my sticky note.';
+      stickyNote.appendChild(text);
+      
+      // add the sticky note to the page
+      document.body.appendChild(stickyNote);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey-Form</title>
+</head>
+<body>
+    <h1>Sahil Survey form</h1>
+    <p>Thank you for taking the time to help us improve the platform
+
+    </p>
+    <form method="post">
+        <fieldset>
+            <label for="name"></label>Enter your name: <input id="name" name="name" type="text" required>
+            <label for="email">Enter your mail: <input id="mail" name="mail" type="email" required></label>
+             <label for="age">Enter your age: <input id="age" name="age" type="number" min="18" required> </label>
+        </fieldset>
+        <fieldset>
+            <label for="referrer">Which option best describes your current role?</label>
+            <select name="referrer" id="referrer">
+                <option value="">Select current role</option>
+                <option value="1">Student</option>
+                <option value="2">Part-time job</option>
+                <option value="3">learning</option>
+                <option value="4">others</option>
+            </select>
+            
+
+        </fieldset>
+        <fieldset>
+            <label for="recomm">Would you recommend freeCodeCamp to a friend? </label>
+            <input type="radio" id="recomm" name="1">Definitely 
+            <input type="radio" id="recomm1" name="1">Maybe
+            <input type="radio" id="recomm2" name="1">Not sure
+        </fieldset>
+        <fieldset>
+            <label for="options">What would you like to see improved? (Check all that apply)</label>
+           <label for="">Front-end Projects<input type="checkbox"></label>
+           <label for="">Back-end Projects<input type="checkbox"></label>
+            <label for="">Data Visualization<input type="checkbox"></label>
+                <label for="">Challenges<input type="checkbox"></label>
+                    <label for=""> additonal<input type="checkbox"></label>
+                        <label for=""> Open Source Community<input type="checkbox"></label>
+                            <label for=""> City Meetups<input type="checkbox"></label>
+                                <label for=""> Wiki<input type="checkbox"></label>
+        </fieldset>
+    </form>
+</body>
+</html>

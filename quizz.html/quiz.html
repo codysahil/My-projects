@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="freeCodeCamp Accessibility Quiz practice project" />
+    <title>Accessibility Quiz</title>
+    <link rel="stylesheet" href="quiz.css" />
+  </head>
+  <body>
+    <header>
+      <img id="logo" src="https://api.logo.com/api/v2/images?logo=logo_b3f791b7-e0ab-4270-98ac-ef1cd66cef2a&format=webp&margins=0&quality=60&width=500&background=transparent&u=1676006085">
+      
+   
+    </header>
+    <main>
+      <form method="post" action="https://freecodecamp.org/practice-project/accessibility-quiz">
+        <section role="region" aria-labelledby="student-info">
+          <h2 id="student-info">Student Info</h2>
+          <div class="info">
+            <label for="student-name">Name:</label>
+            <input type="text" name="student-name" id="student-name" />
+          </div>
+          <div class="info">
+            <label for="student-email">Email:</label>
+            <input type="email" name="student-email" id="student-email" />
+          </div>
+          <div class="info">
+            <label for="birth-date">D.O.B.<span class="sr-only">(Date of Birth)</span></label>
+            <input type="date" name="birth-date" id="birth-date" />
+          </div>
+        </section>
+        <section role="region" aria-labelledby="html-questions">
+          <h2 id="html-questions">Dil ka maamla h bhai</h2>
+          <div class="question-block">
+            <p>1</p>
+            <fieldset class="question" name="html-question-one">
+              <legend>
+               Aapka sachha pyar kon h🧐?
+              </legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="q1-a1">
+                    <input type="radio" id="q1-a1" name="q1" value="true" />
+                    Baris Arduc
+                  </label>
+                </li>
+                <li>
+                  <label for="q1-a2">
+                    <input type="radio" id="q1-a2" name="q1" value="false" />
+                    Christian Harper
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="question-block">
+            <p>2</p>
+            <fieldset class="question" name="html-question-two">
+              <legend>
+                Kya aapke man me aanchal ke liye thodi bhi izzat h 😏?
+              </legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="q2-a1">
+                    <input type="radio" id="q2-a1" name="q2" value="true" />
+                Izzat aur uski huh ...hawa aane de 😤
+                  </label>
+                </li>
+                <li>
+                  <label for="q2-a2">
+                    <input type="radio" id="q2-a2" name="q2" value="false" />
+                Thodi si to h 🫣
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <p>3</p>
+            <fieldset class="question" name="html-question-three">
+                <legend>
+                  Kya hum aanchal aur saundesh ki shaadi krwa payenge💀?
+                </legend>
+                <ul class="answers-list">
+                  <li>
+                    <label for="q3-a1">
+                      <input type="radio" id="q2-a1" name="q3" value="true" />
+                  Jaan de denge iske liye kya baat krte h aap 🥹
+                    </label>
+                  </li>
+                  <li>
+                    <label for="q3-a2">
+                      <input type="radio" id="q3-a2" name="q3" value="false" />
+                  Are iska kuch bhi ho hme kya 😑
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <p>4</p>
+            <fieldset class="question" name="html-question-four">
+                <legend>
+                  Kya sahil li kbhi koi girlfriend ban bhi payegi? 😔
+                </legend>
+                <ul class="answers-list">
+                  <li>
+                    <label for="q4-a1">
+                      <input type="radio" id="q4-a1" name="q4" value="true" />
+                 Shakal dekh ke question pucha kar 😑
+                    </label>
+                  </li>
+                  <li>
+                    <label for="q4-a2">
+                      <input type="radio" id="q4-a2" name="q3" value="false" />
+                  Arrange marriage bhi mushkil h uski 💀
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+          </div>
+        </section>
+        <section role="region" aria-labelledby="css-questions">
+          <h2 id="css-questions">CSS</h2>
+          <div class="formrow">
+            <div class="question-block">
+              <label for="customer">Are you a frontend developer?</label>
+            </div>
+            <div class="answer">
+              <select name="customer" id="customer" required>
+                <option value="">Select an option</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+            <div class="question-block">
+              <label for="css-questions">Do you have any questions:</label>
+            </div>
+            <div class="answer">
+              <textarea id="css-questions" name="css-questions" rows="5" cols="24" placeholder="Who is flexbox..."></textarea>
+            </div>
+          </div>
+        </section>
+        <button type="submit">Send</button>
+      </form>
+    </main>
+    <footer>
+      <address>
+        <a href="https://freecodecamp.org">freeCodeCamp</a><br />
+        San Francisco<br />
+        California<br />
+        USA
+      </address>
+    </footer>
+  </body>
+</html>

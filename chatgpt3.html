@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.left-side {
+  display: flex;
+
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.right-side {
+  display: flex;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: flex;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropbtn {
+  background-color: white;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.login-btn, .signup-btn {
+  background-color: white;
+  color: black;
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-btn:hover, .signup-btn:hover {
+  background-color: black;
+  color: white;
+}
+img{
+    border-radius: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="left-side">
+          <a href="#">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8oHBMkkQRq0BkDgz333CeI95u1pSMXUaSZQ&usqp=CAU"alt="logo">
+          </a>
+        </div>
+        <div class="center">
+          <div class="dropdown">
+            <button class="dropbtn">Dropdown 1</button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Dropdown 2</button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Dropdown 2</button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+        </div>
+        <div class="right-side">
+          <button class="login-btn">Login</button>
+          <button class="signup-btn">Sign Up</button>
+        </div>
+      </nav>
+      <hr>
+</body>
+</html>

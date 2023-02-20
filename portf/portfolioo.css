@@ -1,0 +1,255 @@
+nav{
+    display: flex;
+    background-color: #200e3d;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    list-style: none;
+}
+nav ul li{
+    font-size: 16px;
+    padding: 0 15px;
+    transition: 0.2s;
+    text-transform: uppercase;
+    color: white;
+    
+}
+nav ul li a:hover{
+    transition: 0.2s;
+    color: #52c5ff;
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.hero{
+    padding-top: 130px;
+}
+.hero img{
+    border-style: none;
+    border-radius: 100%;
+    margin: 0 auto;
+    max-width: 440px;
+    display: block;
+}
+h1{
+    color: black;
+    margin: 30px 0px 100px;
+    text-align: center;
+    font-size: 24px;
+    margin: 30px 0px 100px;
+}
+.aboutme{
+    width: 90%;
+    max-width: 1100px;
+    height: auto;
+    background-color: white;
+    text-align: center;
+    padding: 40px 50px 70px;
+    margin: 0 auto;
+    box-shadow: 10px 10px 0 rgb(0 0 0 / 40%), -10px -10px 0px rgb(255 114 114 / 80%);
+}
+.aboutme-section{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: wrap;
+}
+.aboutme-img{
+    height: 450px;
+    width: 400px;
+    background-image: url("6B858195-F9DF-4FC8-B833-139EF790BF39_1_105_c.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+.aboutme-text{
+    height: auto;
+    width: 40%;
+    margin-left: 40px;
+    text-align: left;
+}
+body{
+    background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+    font-family: "Work Sans", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3{
+    font-family: "Days one", sans-serif;
+}
+#projects{
+    padding: 5px;
+    margin: 5%;
+    width: 90%;
+    height: auto;
+    text-align: center;
+}
+.projects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: wrap;
+}
+#projects h2{
+    color: black;
+}
+.earth-project{
+    width: 400px;
+    height: 400px;
+    background: white;
+    position: relative;
+    border-radius: 10px;
+    background-image: url("skyline.png");
+    margin: 20px;
+    background-size: cover;
+    background-position: center;
+}
+#text{
+    position: absolute;
+    height: 65px;
+    width: 90%;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+   background-color: white;
+    overflow: hidden;
+    transition: 0.2s;
+    padding: 20px;
+}
+#text:hover {
+    height: 155px;
+    transition: 0.3s;
+}
+#text h3 {
+    margin-top: 3px;
+}
+
+.content{
+    color: black;
+}
+.contact{
+    width: 100%;
+    height: auto;
+    padding: 75px 0 50px 0;
+    text-align: center;
+    background-color: rgb(3, 3, 3,45%);
+}
+.contact p{
+    margin-bottom: 50px;
+}
+.contact h2, .contact p{
+    color: white;
+}
+.contact-form{
+    max-width: 800px;
+    display: flex;
+    text-align: left;
+    max-width: 1100px;
+    margin: 0 auto;
+    color: white;
+}
+.contact-form{
+    display: block;
+    margin-bottom: 9px;
+
+}
+.message{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+.message textarea{
+border-radius: 5px;
+border: 0px;
+
+}
+.contact-details{
+    flex: 2;
+    margin-right: 50px;
+    
+}
+.contact-details input{
+    width: 100px;
+    border-radius: 5px;
+    border: 0px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+}
+.message button{
+    color: #1d3d5f;
+    border: 0;
+border-radius: 5px;
+background: lightblue;
+width: 140px;
+height: 40px;
+margin-top: 40px;
+margin-left: auto;
+text-transform: uppercase;
+font-weight: bold;
+cursor: pointer;
+transition: 0.3s;
+}
+.message button:hover{
+    background: black;
+    color: white;
+    transition: 0.3s;
+
+}
+footer{
+    height: 90px;
+    background-color: #1f2027;
+}
+footer .container{
+    display: flex;
+    align-items: center;
+    height: 100%;
+} 
+.social-media{
+    font-size: 200%;
+    width: auto;
+    margin-left: auto;
+}
+.social-media a{
+    color: white;
+    transition: 0.2s;
+}
+.social-media a i:hover{
+    color: lightblue;
+    transition: 0.2s;
+}
+.copyright{
+    color: white;
+}
+.stick-project{
+    width: 400px;
+    height: 400px;
+    background: black;
+    position: relative;
+    border-radius: 10px;
+    background-image: url("sticky.png");
+    margin: 20px;
+    background-size: cover;
+    background-position: center;
+}
+.ferris-project{
+    width: 400px;
+    height: 400px;
+    background: white;
+    position: relative;
+    border-radius: 10px;
+    background-image: url("piano.png");
+    margin: 20px;
+    background-size: cover;
+    background-position: center;
+}
